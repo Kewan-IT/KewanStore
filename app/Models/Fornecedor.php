@@ -6,15 +6,16 @@ use App\Core\Model;
 
 class Fornecedor extends Model
 {
-    protected $table = 'fornecedores';
-    
-    protected $fillable = [
+    protected string $tabela = 'fornecedores';
+
+    protected array $fillable = [
         'nome',
-        'cnpj',
-        'email',
+        'contacto',
         'telefone',
+        'email',
         'endereco',
-        'cidade',
-        'estado'
+        'nuit',
+        'observacoes',
+        'ativo',
     ];
 }

@@ -1,10 +1,7 @@
 <?php
 // Página de relatórios (placeholder)
 ?>
-<?php include 'layouts/header.php'; ?>
-<?php include 'layouts/sidebar.php'; ?>
 
-<main class="main-content">
     <div class="container">
         <h1>Relatórios</h1>
         
@@ -30,6 +27,4 @@
             </div>
         </div>
     </div>
-</main>
 
-<?php include 'layouts/footer.php'; ?>

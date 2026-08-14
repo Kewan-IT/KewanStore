@@ -1,10 +1,7 @@
 <?php
 // Página de configurações (placeholder)
 ?>
-<?php include 'layouts/header.php'; ?>
-<?php include 'layouts/sidebar.php'; ?>
 
-<main class="main-content">
     <div class="container">
         <h1>Configurações</h1>
         
@@ -27,6 +24,4 @@
             <button type="submit" class="btn btn-primary">Salvar Configurações</button>
         </form>
     </div>
-</main>
 
-<?php include 'layouts/footer.php'; ?>

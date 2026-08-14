@@ -1,10 +1,7 @@
 <?php
 // Página para editar produto
 ?>
-<?php include 'layouts/header.php'; ?>
-<?php include 'layouts/sidebar.php'; ?>
 
-<main class="main-content">
     <div class="container">
         <h1>Editar Produto</h1>
         
@@ -30,6 +27,4 @@
         </form>
         <?php endif; ?>
     </div>
-</main>
 
-<?php include 'layouts/footer.php'; ?>

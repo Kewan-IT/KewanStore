@@ -6,12 +6,16 @@ use App\Core\Model;
 
 class Compra extends Model
 {
-    protected $table = 'compras';
-    
-    protected $fillable = [
+    protected string $tabela = 'compras';
+
+    protected array $fillable = [
         'fornecedor_id',
-        'data_compra',
+        'usuario_id',
+        'numero_documento',
+        'subtotal',
+        'desconto',
         'total',
-        'status'
+        'status',
+        'observacoes',
     ];
 }

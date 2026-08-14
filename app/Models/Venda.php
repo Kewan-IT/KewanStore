@@ -6,13 +6,26 @@ use App\Core\Model;
 
 class Venda extends Model
 {
-    protected $table = 'vendas';
-    
-    protected $fillable = [
+    protected string $tabela = 'vendas';
+
+    protected array $fillable = [
+        'caixa_id',
+        'usuario_id',
         'cliente_id',
-        'data_venda',
-        'total',
+        'numero_venda',
+        'subtotal',
         'desconto',
-        'status'
+        'total',
+        'forma_pagamento',
+        'valor_pago',
+        'troco',
+        'status',
     ];
+
+    public function vendasDoCaixa(int $caixaId): array
+    {
+        $stmt = $this->db->prepare("SELECT * FROM {$this->tabela} WHERE caixa_id = :caixa_id");
+        $stmt->execute(['caixa_id' => $caixaId]);
+        return $stmt->fetchAll();
+    }
 }

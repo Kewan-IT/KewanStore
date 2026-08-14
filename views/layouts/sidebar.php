@@ -35,3 +35,5 @@
         </ul>
     </div>
 </aside>
+
+<main class="main-content">

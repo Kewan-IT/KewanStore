@@ -6,14 +6,15 @@ use App\Core\Model;
 
 class Usuario extends Model
 {
-    protected $table = 'usuarios';
+    protected string $tabela = 'usuarios';
 
-    protected $fillable = [
+    protected array $fillable = [
         'nome',
         'email',
         'senha',
         'perfil',
-        'ativo'
+        'foto',
+        'ativo',
     ];
 
     public function buscarPorEmail(string $email): ?array

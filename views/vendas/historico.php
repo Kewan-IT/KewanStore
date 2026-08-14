@@ -1,10 +1,7 @@
 <?php
 // Página de histórico de vendas
 ?>
-<?php include 'layouts/header.php'; ?>
-<?php include 'layouts/sidebar.php'; ?>
 
-<main class="main-content">
     <div class="container">
         <h1>Histórico de Vendas</h1>
         
@@ -43,6 +40,4 @@
             </tbody>
         </table>
     </div>
-</main>
 
-<?php include 'layouts/footer.php'; ?>

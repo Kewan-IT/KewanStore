@@ -1,10 +1,7 @@
 <?php
 // Página de lista de produtos
 ?>
-<?php include 'layouts/header.php'; ?>
-<?php include 'layouts/sidebar.php'; ?>
 
-<main class="main-content">
     <div class="container">
         <h1>Produtos</h1>
         
@@ -42,6 +39,4 @@
             </tbody>
         </table>
     </div>
-</main>
 
-<?php include 'layouts/footer.php'; ?>

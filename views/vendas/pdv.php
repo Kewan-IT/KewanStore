@@ -1,10 +1,7 @@
 <?php
 // Página PDV - Ponto de Venda
 ?>
-<?php include 'layouts/header.php'; ?>
-<?php include 'layouts/sidebar.php'; ?>
 
-<main class="main-content">
     <div class="container pdv-container">
         <h1>Ponto de Venda (PDV)</h1>
         
@@ -55,6 +52,4 @@
             </div>
         </div>
     </div>
-</main>
 
-<?php include 'layouts/footer.php'; ?>

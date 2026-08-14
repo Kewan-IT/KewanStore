@@ -6,10 +6,11 @@ use App\Core\Model;
 
 class Categoria extends Model
 {
-    protected $table = 'categorias';
+    protected string $tabela = 'categorias';
     
-    protected $fillable = [
+    protected array $fillable = [
         'nome',
-        'descricao'
+        'descricao',
+        'ativo',
     ];
 }

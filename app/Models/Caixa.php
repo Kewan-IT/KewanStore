@@ -6,14 +6,24 @@ use App\Core\Model;
 
 class Caixa extends Model
 {
-    protected $table = 'caixa';
-    
-    protected $fillable = [
+    protected string $tabela = 'caixa';
+
+    protected array $fillable = [
         'usuario_id',
-        'data_abertura',
-        'data_fechamento',
         'valor_abertura',
         'valor_fechamento',
-        'status'
+        'valor_esperado',
+        'diferenca',
+        'observacoes',
+        'status',
     ];
+
+    public function caixaAbertoDoUsuario(int $usuarioId): array|false
+    {
+        $stmt = $this->db->prepare(
+            "SELECT * FROM {$this->tabela} WHERE usuario_id = :usuario_id AND status = 'aberto' LIMIT 1"
+        );
+        $stmt->execute(['usuario_id' => $usuarioId]);
+        return $stmt->fetch();
+    }
 }

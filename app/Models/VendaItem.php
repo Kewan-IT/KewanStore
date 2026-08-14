@@ -6,13 +6,15 @@ use App\Core\Model;
 
 class VendaItem extends Model
 {
-    protected $table = 'venda_items';
+    protected string $tabela = 'venda_itens';
     
-    protected $fillable = [
+    protected array $fillable = [
         'venda_id',
         'produto_id',
+        'lote_id',
         'quantidade',
         'preco_unitario',
-        'subtotal'
+        'desconto',
+        'subtotal',
     ];
 }

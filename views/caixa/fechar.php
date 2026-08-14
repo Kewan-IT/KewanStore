@@ -1,10 +1,7 @@
 <?php
 // Página para fechar caixa
 ?>
-<?php include 'layouts/header.php'; ?>
-<?php include 'layouts/sidebar.php'; ?>
 
-<main class="main-content">
     <div class="container">
         <h1>Fechar Caixa</h1>
         
@@ -31,6 +28,4 @@
             <a href="<?php echo url('caixa'); ?>" class="btn btn-secondary">Cancelar</a>
         </form>
     </div>
-</main>
 
-<?php include 'layouts/footer.php'; ?>

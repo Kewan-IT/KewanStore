@@ -1,10 +1,7 @@
 <?php
 // Página para criar produto
 ?>
-<?php include 'layouts/header.php'; ?>
-<?php include 'layouts/sidebar.php'; ?>
 
-<main class="main-content">
     <div class="container">
         <h1>Criar Novo Produto</h1>
         
@@ -40,6 +37,4 @@
             <a href="<?php echo url('produtos'); ?>" class="btn btn-secondary">Cancelar</a>
         </form>
     </div>
-</main>
 
-<?php include 'layouts/footer.php'; ?>
