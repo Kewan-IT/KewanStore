@@ -40,11 +40,9 @@ function e(?string $valor): string
 
 function url(string $rota = ''): string
 {
-    $config = require dirname(__DIR__, 2) . '/config/config.php';
-    $base = rtrim($config['app_url'], '/');
     $rota = ltrim($rota, '/');
 
-    return $rota === '' ? $base : $base . '/' . $rota;
+    return $rota === '' ? '/' : '/' . $rota;
 }
 
 /**
