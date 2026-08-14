@@ -1,33 +1,8 @@
 {
-  "name": "KewanStore - PHP MVC + MariaDB",
+  "name": "KewanStore - PHP 8.3 + MariaDB (Alpine)",
 
-  "image": "mcr.microsoft.com/devcontainers/base:noble",
-
-  "features": {
-    "ghcr.io/devcontainers/features/php:1": {
-      "version": "8.4"
-    }
-  },
-
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "bmewburn.vscode-intelephense-client",
-        "xdebug.php-debug",
-        "mtxr.sqltools",
-        "mtxr.sqltools-driver-mysql",
-        "formulahendry.auto-rename-tag",
-        "ecmel.vscode-html-css"
-      ],
-      "settings": {
-        "php.validate.executablePath": "/usr/local/php/current/bin/php"
-      }
-    }
-  },
-
-  "postCreateCommand": "bash .devcontainer/setup.sh",
-
-  "postStartCommand": "sudo service mariadb start || sudo mariadbd-safe --skip-grant-tables & sleep 2",
+  "postCreateCommand": "sh .devcontainer/setup.sh",
+  "postStartCommand": "sh .devcontainer/start.sh",
 
   "forwardPorts": [8000, 3306],
 
@@ -40,7 +15,5 @@
       "label": "MariaDB",
       "onAutoForward": "silent"
     }
-  },
-
-  "remoteUser": "codespace"
+  }
 }
